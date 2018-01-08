@@ -25,9 +25,12 @@ public class HelloController {
     @RequestMapping("helloName")
     public ModelAndView getProperties() {
         ModelAndView mv = new ModelAndView();
-        mv.addObject("name",pName);
+        mv.addObject("凡",pName);
         mv.setViewName("index");
         return mv;
     }
 
+    public static void main(String[] args) {
+        System.out.println(System.getProperty("user.dir"));
+    }
 }
